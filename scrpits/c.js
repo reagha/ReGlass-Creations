@@ -105,12 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Handle Visa Payment
   visaButton.addEventListener('click', () => {
+
+    const cardNumber = prompt("Enter your Visa card number (16 digits):");
+
+ if (!cardNumber || cardNumber.length !== 16 || !/^\d+$/.test(cardNumber)) {
+   alert("Invalid card number. It must be exactly 16 digits and contain only numbers.");
+   return;
+ }
+
     alert('Payment successful with Visa!');
     completeCheckout();
   });
 
   // Handle MasterCard Payment
   mastercardButton.addEventListener('click', () => {
+
+    const cardNumber = prompt("Enter your MasterCard number (16 digits):");
+
+   if (!cardNumber || cardNumber.length !== 16 || !/^\d+$/.test(cardNumber)) {
+     alert("Invalid card number. It must be exactly 16 digits and contain only numbers.");
+     return;
+   }
+
     alert('Payment successful with MasterCard!');
     completeCheckout();
   });
