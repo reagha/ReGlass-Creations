@@ -30,7 +30,7 @@ body{
   width: 20%;
   height: 120px;
   display: inline-block;
- 
+
 
 }
 .a{
@@ -429,7 +429,7 @@ body{
   position:relative;
   bottom:px;
 }
-#four{
+.four{
   margin: auto;
   border-radius: 100px;
   padding: 10px;
@@ -438,11 +438,11 @@ body{
   border: none;
   display: none;
 }
-#four:hover{
+.four:hover{
   border: #2E7D32 2px solid;
   background-color: lightgreen;
 }
-.two:hover #four{
+.two:hover .four{
   display: block;
 }
 
@@ -963,6 +963,7 @@ body{
   width: 80%;
   margin-top: 50px;
 }
+
 
 
 
